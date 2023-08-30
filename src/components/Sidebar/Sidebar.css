@@ -1,0 +1,4957 @@
+/* Sidebar CSS */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: -200px; /* Start offscreen */
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: left 0.3s ease-in-out; /* Add transition for smooth animation */
+    padding-top: 20px;
+  }
+  
+  .sidebar.open {
+    width: 300px; /* Display width when open */
+    left: 0;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    width: 142px;
+    height: 34px;
+    top: 5px;
+    left: 140px;
+    background: none;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+    outline: none;
+    z-index: 1; /* Ensure button is above the sidebar */
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    display: block;
+  }
+  
+  .sidebar a.active {
+    background-color: #555;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+/*------------------------------MODAL BOX ----------------------*/
+.fullscreen-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-modal {
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*----------------CLG SLIDEBAR CSS-------------------*/
+  .d-block {
+    display: block;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+.modal.show .modal-dialog {
+    -ms-transform: none;
+    transform: none;
+}
+.modal.fade .modal-dialog {
+      transition: transform 0.3s ease-out;
+}
+.modal-dialog-centered {
+    min-height: calc(100% - 3.5rem);
+}
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+}
+/* .modal-dialog { */
+    /* position: relative; */
+    /* width: auto; */
+    /* pointer-events: none; */
+/* } */
+/* .fullscreen-modal { */
+    /* height: 100%; */
+    /* max-width: none !important; */
+    /* margin: 0 !important; */
+/* } */
+.modal-dialog-centered::before {
+    height: calc(100vh - 3.5rem);
+}
+.modal-dialog-centered::before {
+      display: block;
+      content: "";
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+/* .fullscreen-modal .modal-content { */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* overflow-y: auto; */
+    /* border-radius: 0; */
+/* } */
+.modal-content {
+      display: flex;
+      flex-direction: column;
+  pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+  outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.p-0 {
+    padding: 0;
+}
+
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+div {
+    display: block;
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto;
+}
+.p-3 {
+    padding: 0.75rem;
+}
+.right-0 {
+    right: 0;
+}
+
+.top-0 {
+    top: 0px;
+}
+.position-absolute {
+    position: absolute;
+}
+.border-0 {
+    border: 0;
+}
+.bg-transparent {
+    background-color: transparent;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border-radius: 0;
+}
+button {
+  text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    -webkit-clip: rect(0,0,0,0);
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+    width: 100%;pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+element.style {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+style {
+    width: 23px;
+    height: 23px;
+    fill: rgb(102, 102, 102);
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+}
+.modal-content {
+      display: flex;
+  flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+element.style {
+    width: 23px;
+    height: 23px;
+    fill: rgb(102, 102, 102);
+}
+svg {
+    height: 100%;
+    width: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+svg{
+    width: 512;
+    height: 512;
+}
+
+svg:not(:root) {
+    /* overflow-clip-margin: content-box; */
+    overflow: hidden;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+}
+.modal-content {
+  position: relative;
+      display: flex;
+  flex-direction: column;
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto;
+}
+.p-3 {
+    padding: 0.75rem;
+}
+.right-0 {
+    right: 0;
+}
+
+.top-0 {
+    top: 0px;
+}
+.position-absolute {
+    position: absolute;
+}
+.border-0 {
+    border: 0;
+}
+.bg-transparent {
+    background-color: transparent;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border-radius: 0;
+}
+button {
+      text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+}
+.modal-content {
+      position: relative;
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+  pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+
+
+
+.cd-main-header.jsx-2003058024 {
+    position: fixed;
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    background: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+.modal-content {
+      display: flex;
+  flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+.container {
+    max-width: 1130px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.modal-content {
+      display: flex;
+      flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.pr-3, .px-3 {
+    padding-right: 0.75rem;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+.pr-3, .px-3 {
+    padding-right: 0.75rem;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.d-flex {
+    display: flex;
+}
+.modal-content {
+      position: relative;
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.heading.jsx-2003058024 {
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: 1.3;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.modal-content {
+      position: relative;
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.text-primary {
+    color: #ff7900;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.heading.jsx-2003058024 {
+    font-size: 24px;
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.text-primary {
+    color: #ff7900;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.heading.jsx-2003058024 {
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.font-weight-bold, h1.font-weight-bold, h2.font-weight-bold, h3.font-weight-bold, h4.font-weight-bold, h5.font-weight-bold, h6.font-weight-bold, .h1.font-weight-bold, .h2.font-weight-bold, .h3.font-weight-bold, .h4.font-weight-bold, .h5.font-weight-bold, .h6.font-weight-bold {
+    font-weight: 700;
+}
+h2, .h2 {
+    font-size: 1.125rem;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.modal-content {
+      position: relative;
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.text-primary {
+    color: #ff7900;
+}
+.heading.jsx-2003058024 {
+    font-size: 24px;
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+.modal-content {
+  position: relative;
+      display: flex;
+      flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.heading.jsx-2003058024 {
+  margin-left: 400px;
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: 1.3;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.text-primary {
+    color: #ff7900;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+.pl-3, .px-3 {
+    padding-left: 0.75rem;
+}
+.pr-3, .px-3 {
+    padding-right: 0.75rem;
+}
+
+.pb-1, .py-1 {
+    padding-bottom: 0.25rem;
+}
+.pt-1, .py-1 {
+    padding-top: 0.25rem;
+}
+.ml-3, .mx-3 {
+    margin-left: 0.75rem;
+}
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.border-primary {
+    border-color: #ff7900;
+}
+.border {
+    border: 1px solid #dedede;
+}
+.bg-white {
+    background-color: #fff;
+}
+div {
+    display: block;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.justify-content-center {
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.d-flex {
+    display: flex;
+}
+.pr-3, .px-3 {
+    padding-right: 0.75rem;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+.container {
+    max-width: 1130px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pr-3, .px-3 {
+    padding-right: 0.75rem;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+.container {
+    max-width: 1130px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.close.jsx-2003058024 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgb(233, 233, 233);
+    display: flex;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+.p-3 {
+    padding: 0.75rem;
+}
+.border-0 {
+    border: 0;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+  text-align: center;
+    align-items: flex-start;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    -webkit-clip: rect(0,0,0,0);
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.close.jsx-2003058024 svg {
+    margin: auto;
+    opacity: 0.7;
+    width: 18px !important;
+    height: 18px !important;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+}
+
+element.style {
+    width: 23px;
+    height: 23px;
+    fill: rgb(102, 102, 102);
+}
+.close.jsx-2003058024 svg {
+    margin: auto;
+    opacity: 0.7;
+    width: 18px !important;
+    height: 18px !important;
+}
+svg {
+    height: 100%;
+    width: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+svg{
+    width: 512;
+    height: 512;
+}
+
+svg:not(:root) {
+    /* overflow-clip-margin: content-box; */
+    overflow: hidden;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    cursor: default;
+}
+.modal-content {
+  display: flex;
+      flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+style  {
+    width: 23px;
+    height: 23px;
+    fill: rgb(102, 102, 102);
+}
+
+element.style {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+style {
+    width: 23px;
+    height: 23px;
+    fill: rgb(102, 102, 102);
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.close.jsx-2003058024 svg {
+    margin: auto;
+    opacity: 0.7;
+    width: 18px !important;
+    height: 18px !important;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+}
+.modal-content {
+      position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+      width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.close.jsx-2003058024 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgb(233, 233, 233);
+    display: flex;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+.p-3 {
+    padding: 0.75rem;
+}
+
+.border-0 {
+    border: 0;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+      text-align: center;
+    align-items: flex-start;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.cd-main-header.jsx-2003058024 {
+    position: fixed;
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    background: rgb(0 0 0/ 0%);
+    z-index: 2;
+}
+
+.align-items-center {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+div {
+    display: block;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+      width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.cd-main_container.jsx-2003058024 {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap: 30px;
+    padding-top: 80px;
+    margin-left: -15px;
+}
+.cd-main_container.jsx-2003058024 ul.jsx-2003058024 {
+    grid-column: span 6 / auto;
+    position: sticky;
+    top: 80px;
+    height: calc(100vh - 80px);
+    padding: 10px;
+    margin: 0px;
+    overflow-y: auto;
+    border-right: 1px solid rgb(233, 233, 233);
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.cd-main_container.jsx-2003058024 ul.jsx-2003058024 li.jsx-2003058024 {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 8px 0px;
+}
+li {
+    display: list-item;
+    /* text-align: -webkit-match-parent; */
+}
+.cd-main_container.jsx-2003058024 ul.jsx-2003058024 li.jsx-2003058024 button.jsx-2003058024 {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    padding: 0px;
+    outline: 0px;
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+.text-left {
+    text-align: left;
+}
+.w-100 {
+    width: 100%;
+}
+
+.border-0 {
+    border: 0;
+}
+.bg-transparent {
+    background-color: transparent;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+/*  */
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+button {
+    border-radius: 0;
+}
+button {
+  text-rendering: auto;
+      letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+}
+.cd-main_container.jsx-2003058024 ul.jsx-2003058024 li.jsx-2003058024 {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 8px 0px;
+}
+.cd-main_container.jsx-2003058024 ul.jsx-2003058024 li.jsx-2003058024 {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 8px 0px;
+}
+li {
+    display: list-item;
+    /* text-align: -webkit-match-parent; */
+}
+.modal-content {
+      position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.cd-main_container.jsx-2003058024 ul.jsx-2003058024 li.jsx-2003058024 {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 8px 0px;
+}
+li {
+    display: list-item;
+    /* text-align: -webkit-match-parent; */
+}
+.modal-content {
+  position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.cd-main_container.jsx-2003058024 ul.jsx-2003058024 {
+    grid-column: span 6 / auto;
+    position: sticky;
+    top: 80px;
+    height: calc(100vh - 80px);
+    padding: 10px;
+    margin: 0px;
+    overflow-y: auto;
+    border-right: 1px solid rgb(233, 233, 233);
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.modal-content {
+    position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.cd-main_container.jsx-2003058024 .exam_list_container.jsx-2003058024 {
+    grid-column: span 18 / auto;
+    padding-top: 30px;
+}
+div {
+    display: block;
+}
+.modal-content {
+    position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.search.jsx-2379161319 {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid rgb(220, 220, 220);
+    padding-left: 56px;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+.d-flex {
+    display: flex;
+}
+.modal-content {
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.search.jsx-2379161319 > svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.search.jsx-2379161319 {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid rgb(220, 220, 220);
+    padding-left: 56px;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+.modal-content {
+  position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+      width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.search.jsx-2379161319 {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid rgb(220, 220, 220);
+    padding-left: 56px;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+      width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.search.jsx-2379161319 > svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.search.jsx-2379161319 {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid rgb(220, 220, 220);
+    padding-left: 56px;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+      width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.search.jsx-2379161319 > input {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input:not([type="range"]):not([type="color"]) {
+    writing-mode: horizontal-tb !important;
+}
+input[type="text" i] {
+    padding: 1px 2px;
+}
+input {
+      text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+      text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+      /* -webkit-rtl-ordering: logical; */
+    cursor: text;
+}
+.search.jsx-2379161319 {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid rgb(220, 220, 220);
+    padding-left: 56px;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.search.jsx-2379161319 {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid rgb(220, 220, 220);
+    padding-left: 56px;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+.d-flex {
+    display: flex;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 {
+    margin-bottom: 48px;
+}
+.modal-content {
+      position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+p {
+    margin-top: 0;
+}
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.modal-content {
+  position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+div {
+    display: block;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.modal-content {
+      position: relative;
+    display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_img.jsx-3136676245 > svg {
+    width: 100%;
+    height: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.modal-content {
+      position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.modal-content {
+      position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+      width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.modal-content {
+  position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_img.jsx-3136676245 > svg {
+    width: 100%;
+    height: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+div {
+    display: block;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+p {
+    margin-top: 0;
+}
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 {
+    display: grid;
+    grid-template-columns: repeat(18, 32px);
+    column-gap: 16px;
+    margin-left: 44px;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+      width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+      letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+}
+
+element.style {
+    width: 10px;
+    height: 10px;
+}
+svg {
+    height: 100%;
+    width: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+svg{
+    fill: rgb(102, 102, 102);
+    width: 451.846;
+    height: 451.847;
+}
+
+svg:not(:root) {
+    /* overflow-clip-margin: content-box; */
+    overflow: hidden;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+.text-left {
+    text-align: left;
+}
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    cursor: default;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+      width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+      letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+}
+.modal-content {
+      position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+      letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+      width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+.modal-content {
+    position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+}
+.modal-content {
+    position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+  .exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+}
+.modal-content {
+    position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+/*  */
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+      letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+.modal-content {
+    position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 {
+    display: grid;
+    grid-template-columns: repeat(18, 32px);
+    column-gap: 16px;
+    margin-left: 44px;
+}
+.modal-content {
+      position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 {
+    margin-bottom: 48px;
+}
+div {
+    display: block;
+}
+.modal-content {
+      position: relative;
+        display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 {
+    margin-bottom: 48px;
+}
+div {
+    display: block;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+p {
+    margin-top: 0;
+}
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+div {
+    display: block;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_img.jsx-3136676245 > svg {
+    width: 100%;
+    height: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_img.jsx-3136676245 > svg {
+    width: 100%;
+    height: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+  /* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+div {
+    display: block;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+p {
+    margin-top: 0;
+}
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 {
+    display: grid;
+    grid-template-columns: repeat(18, 32px);
+    column-gap: 16px;
+    margin-left: 44px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+      letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+  .exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+/*  */
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+      letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+      letter-spacing: normal;
+    word-spacing: normal;
+  text-indent: 0px;
+    text-shadow: none;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+  .text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+.w-100 {
+    width: 100%;
+}
+
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+  svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg {
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+  .text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+  text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+/*  */
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 {
+    display: grid;
+    grid-template-columns: repeat(18, 32px);
+    column-gap: 16px;
+    margin-left: 44px;
+}
+.modal-content {
+    position: relative;
+  display: flex;
+    /* -webkit-flex-direction: column; */
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 {
+    margin-bottom: 48px;
+}
+div {
+    display: block;
+}
+.modal-content {
+    position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+  width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 {
+    margin-bottom: 48px;
+}
+div {
+    display: block;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.align-items-center {
+    -webkit-align-items: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+p {
+    margin-top: 0;
+}
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+div {
+    display: block;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_img.jsx-3136676245 > svg {
+    width: 100%;
+    height: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_img.jsx-3136676245 > svg {
+    width: 100%;
+    height: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+div {
+    display: block;
+}
+
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+p {
+    margin-top: 0;
+}
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 {
+    display: grid;
+    grid-template-columns: repeat(18, 32px);
+    column-gap: 16px;
+    margin-left: 44px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+button, select {
+    text-transform: none;
+}
+
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+
+element.style {
+    width: 10px;
+    height: 10px;
+}
+svg {
+    height: 100%;
+    width: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+svg{
+    fill: rgb(102, 102, 102);
+    width: 451.846;
+    height: 451.847;
+}
+
+svg:not(:root) {
+    /* overflow-clip-margin: content-box; */
+    overflow: hidden;
+}
+
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+.text-left {
+    text-align: left;
+}
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+  svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg {
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.text-left {
+    text-align: left;
+}
+button, select {
+    text-transform: none;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+  .exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+button, select {
+    text-transform: none;
+}
+
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+.modal-content {
+    position: relative;
+      display: flex;
+    /* -webkit-flex-direction: column; */
+      width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+button, select {
+    text-transform: none;
+}
+
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 {
+    display: grid;
+    grid-template-columns: repeat(18, 32px);
+    column-gap: 16px;
+    margin-left: 44px;
+}
+.exam_container.jsx-3136676245 {
+    margin-bottom: 48px;
+}
+div {
+    display: block;
+}
+
+
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+p {
+    margin-top: 0;
+}
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+div {
+    display: block;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_img.jsx-3136676245 > svg {
+    width: 100%;
+    height: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: none;
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_img.jsx-3136676245 > svg {
+    width: 100%;
+    height: 100%;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: none;
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_img.jsx-3136676245 {
+    width: 44px;
+    height: 44px;
+}
+div {
+    display: block;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.exam_container.jsx-3136676245 p.jsx-3136676245 {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 16px;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+p {
+    margin-top: 0;
+}
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 {
+    display: grid;
+    grid-template-columns: repeat(18, 32px);
+    column-gap: 16px;
+    margin-left: 44px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+/* svg:not(:root) { */
+    /* overflow-clip-margin: content-box; */
+/* } */
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+svg{
+    fill: rgb(102, 102, 102);
+}
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+button, select {
+    text-transform: none;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+button {
+      text-rendering: auto;
+      letter-spacing: normal;
+    word-spacing: normal;
+      text-indent: 0px;
+    text-shadow: none;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 .exam_card.jsx-3136676245 {
+    grid-column: span 6 / auto;
+    position: relative;
+    padding: 0px 24px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 1px 1px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
+    border: 1px solid rgb(222, 222, 222);
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+.align-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.justify-content-between {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+/* button, [type=button], [type=reset], [type=submit] { */
+    /* -webkit-appearance: button; */
+/* } */
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+.exam_container.jsx-3136676245 .inner_exam_container.jsx-3136676245 {
+    display: grid;
+    grid-template-columns: repeat(18, 32px);
+    column-gap: 16px;
+    margin-left: 44px;
+}
+.exam_container.jsx-3136676245 {
+    margin-bottom: 48px;
+}
+div {
+    display: block;
+}
+.cd-main_container.jsx-2003058024 .exam_list_container.jsx-2003058024 {
+    grid-column: span 18 / auto;
+    padding-top: 30px;
+}
+div {
+    display: block;
+}
+.cd-main_container.jsx-2003058024 {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap: 30px;
+    padding-top: 80px;
+    margin-left: -15px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+div {
+    display: block;
+}
+.p-0 {
+    padding: 0;
+}
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+}
+  .fullscreen-modal .modal-content {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    border-radius: 0;
+}
+.modal.show .modal-dialog {
+    transform: none;
+}
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}
+
+.modal-dialog-centered {
+      display: flex;
+  -webkit-box-align: center;
+      align-items: center;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    pointer-events: none;
+}
+.fullscreen-modal {
+  width: 90%;
+    height: 100%;
+    max-width: none !important;
+    margin: 0 !important;
+}
+.d-block {
+    display: block;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #333;
+    text-align: left;
+    background-color: #fff;
+    min-width: 1300px;
+    overflow-x: auto !important;
+}
+.modal-backdrop.show {
+    opacity: 0.5;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}

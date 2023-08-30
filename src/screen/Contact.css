@@ -1,0 +1,13 @@
+.contact-form-container{
+    width: 60vw;
+    border: 2px solid skyblue;
+   
+}
+
+@media(max-width:768px){
+    .contact-form-container{
+        background-color: yellow;
+        width: 88vw;
+    }
+
+}

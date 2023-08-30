@@ -1,0 +1,22 @@
+/* Footer.css */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #000000;
+  padding: 20px;
+}
+/* Footer.css */
+.footer-container {
+    font-size: 14px;
+  }
+  
+.footer-sub-title {
+    font-size: 14px;
+  }
+  
+.footer-line{
+    /* text-align: right; */
+    margin-bottom: 10px;
+}
+
