@@ -15,7 +15,7 @@ import smb1 from "../assets/topuniversities/smb1.png";
 
 /*Latets notifications*/
 import uttar from "../assets/latestnotificaton/Uttar.jpg";
-import clster from "../assets/latestnotificaton/clsterlogo.jpg";
+// import clster from "../assets/latestnotification/clsterlogo.jpg";
 import iimlko from "../assets/latestnotificaton/iimlko.jpg";
 import mhtlogo from "../assets/latestnotificaton/mhtlogo.jpg";
 import tamil from "../assets/latestnotificaton/tamil.jpg";
@@ -2564,7 +2564,7 @@ function Home() {
                     University of Hyderabad PG Admission 2023 CUET Apply is
                     August 12
                   </h5>
-                  <img src={clster} alt="Avatar" className="card-avatar" />
+                  {/* <img src={clster} alt="Avatar" className="card-avatar"  loading="lazy"/> */}
                   <h6
                     className="card-subtitle mb-2 text-muted"
                     style={{

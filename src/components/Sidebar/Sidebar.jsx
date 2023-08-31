@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import "./Sidebar.css";
 
 const Sidebar = () => {
@@ -220,6 +220,7 @@ const Sidebar = () => {
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 451 451"
                             xmlSpace="preserve"
+                            loading="lazy"
                           >
                             <path
                               fill="#adb5bd"
@@ -243,6 +244,7 @@ const Sidebar = () => {
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="-255 347 100 100"
                               xmlSpace="preserve"
+                              loading="lazy"
                             >
                               <path
                                 fill="#3B61AD"
@@ -261,9 +263,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="BE/B.Tech"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/engineering"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -276,15 +276,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="Diploma in Engineering"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/engineering"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -297,15 +296,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="ME/M.Tech"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/engineering"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -318,6 +316,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -335,6 +334,7 @@ const Sidebar = () => {
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="-255 347 100 100"
                               xmlSpace="preserve"
+                              loading="lazy"
                             >
                               <path
                                 fill="#3D61AC"
@@ -353,9 +353,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="MBA/PGDM"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/management"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -368,15 +366,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="BBA/BBM"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/management"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -389,15 +386,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="Executive MBA"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/management"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -410,6 +406,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -427,6 +424,7 @@ const Sidebar = () => {
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="-255 347 100 100"
                               xmlSpace="preserve"
+                              loading="lazy"
                             >
                               <path
                                 fill="#3B61AD"
@@ -445,9 +443,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="B.Com"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/commerce"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -460,15 +456,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="M.Com"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/commerce"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -481,6 +476,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -524,9 +520,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="BA"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/arts"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -539,15 +533,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="MA"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/arts"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -560,15 +553,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="BFA"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/arts"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -581,15 +573,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="BSW"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/arts"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -602,6 +593,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -637,9 +629,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="MBBS"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/medical"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -652,16 +642,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="PG Medical"
-                              data-event-type="popup_opened_change_goal"
-                              data-csm-href="/medical"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
                               PG Medical
@@ -673,6 +661,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -716,9 +705,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="B.Des"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/design"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -731,15 +718,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="M.Des"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/design"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -752,6 +738,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -787,9 +774,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="B.Sc"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/science"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -802,15 +787,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="M.Sc"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/science"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -823,6 +807,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -858,9 +843,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="B.Pharm"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/pharmacy"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -873,15 +856,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="M.Pharm"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/pharmacy"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -894,6 +876,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -929,9 +912,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="B.Sc (Nursing)"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/paramedical"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -944,15 +925,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="M.Sc (Nursing)"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/paramedical"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -965,6 +945,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1000,9 +981,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="BCA"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/computerapplication"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1015,15 +994,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="MCA"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/computerapplication"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1036,6 +1014,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1071,9 +1050,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="B.Ed"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/education"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1086,15 +1063,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="M.Ed"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/education"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1107,15 +1083,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="B.P.Ed"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/education"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1128,6 +1103,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1163,9 +1139,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="B.Sc (Agriculture)"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/agriculture"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1178,15 +1152,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="M.Sc (Agriculture)"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/agriculture"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1199,6 +1172,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1238,9 +1212,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="Bachelor of Animation"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/animation"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1253,15 +1225,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="Diploma in Animation"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/animation"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1274,15 +1245,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="Certificate in Animation"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/animation"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1295,6 +1265,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"  
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1338,9 +1309,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="B.Arch"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/architecture"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1353,15 +1322,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="M.Arch"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/architecture"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1374,6 +1342,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1409,9 +1378,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="BHM"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/hotelmanagement"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1424,6 +1391,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1459,9 +1427,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="LLB"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/law"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1474,15 +1440,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="LLM"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/law"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1495,6 +1460,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1530,9 +1496,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="BDS"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/dental"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1545,15 +1509,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading='lazy'
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="MDS"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/dental"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1566,6 +1529,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1605,9 +1569,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="Veterinary Sciences"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/veterinary"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1620,6 +1582,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading='lazy'
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1659,9 +1622,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="BMM"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/masscommunication"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1674,15 +1635,14 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading='lazy'
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
                             </button>
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="MMC"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/masscommunication"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1695,6 +1655,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1734,9 +1695,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="BBA (Aviation)"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/aviation"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1749,6 +1708,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
@@ -1788,9 +1748,7 @@ const Sidebar = () => {
                           <div className="jsx-3136676245 inner_exam_container">
                             <button
                               type="button"
-                              data-csm-track="true"
                               data-csm-title="Vocational Courses"
-                              data-event-type="popup_opened_change_goal"
                               data-csm-href="/vocationalcourse"
                               className="jsx-3136676245 exam_card w-100 text-left d-flex align-items-center justify-content-between"
                             >
@@ -1803,6 +1761,7 @@ const Sidebar = () => {
                                 viewBox="0 0 451.846 451.847"
                                 xmlSpace="preserve"
                                 style={{ width: 10, height: 10 }}
+                                loading="lazy"
                               >
                                 <path d="M345.441 248.292 151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z" />
                               </svg>
